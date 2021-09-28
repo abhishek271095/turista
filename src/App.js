@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './Component/Navbar';
+import Footer from './Component/Footer';
+import Gallery from './Component/Gallery';
+import Highlight from './Component/Highlight';
+import Message from './Component/Message';
+import Cerosal from './Component/Carousel';
+import Contact from './Component/Form';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navigation/>
+        <Cerosal/>     
+        <Message/>
+        <Highlight/>
+        <Gallery/>
+        <Contact/>
+        <Footer/>
     </div>
   );
 }
-
 export default App;

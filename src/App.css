@@ -1,11 +1,91 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.brand_box1
+{
+	background-image: url("../src/Img/gall1.jpg");
+	background-size: contain;
+  height: 200px;
+}
+.brand_box2
+{
+	background-image: url("../src/Img/gall2.jpg");
+	background-size: contain;
+  height: 200px;
+  background-repeat:  no-repeat;
+}
+.brand_box3
+{
+	background-image: url("../src/Img/gall3.jpg");
+  height: 200px;
+	background-size: contain;
+  background-repeat:  no-repeat;
+  background-position: 50px 0px;  
+   
+}
+.brand_box4
+{
+	background-image: url("../src/Img/gall4.jpg");
+	background-size: cover;
+  height: 200px;
+  background-repeat:  no-repeat;
+}
+.brand_box5
+{
+	background-image: url("../src/Img/wall5.jpg");
+  height: 200px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand_box6
+{
+	background-image: url("../src/Img/wall6.jpg");
+	background-size: contain;
+  height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand_box7
+{
+	background-image: url("../src/Img/wall7.jpg");
+	background-size: contain;
+  height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand_box8
+{
+	background-image: url("../src/Img/wall8.jpg");
+	background-size: contain;
+  height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand_box1:hover, .brand_box2:hover, .brand_box3:hover, .brand_box4:hover, .brand_box5:hover, .brand_box6:hover, .brand_box7:hover, .brand_box8:hover
+{
+	box-shadow: 2px 2px 2px 2px grey;
+}
+.blog
+{
+  height: 50%;
+
+}
+.high_bx:hover
+{
+  background-color: #040f0f;
+  color: white;
+  box-shadow: 1px 1px 13px 0px rgba(164, 167, 166, 0.75);
+  transition: 3s;
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
