@@ -21,14 +21,14 @@ const Cerosal = ()=>{
             <div className="d-flex align-items-center justify-content-center" style={{'backgroundImage': `url(${slideImages[0]})`, 'height': `100vh`, 'backgroundSize': `cover`,
   'backgroundBlendMode': `darken`, 'backgroundColor': `rgba(23, 8, 228, 0.856)`, 'backgroundAttachment': `fixed`}}>
         
-             <h1 className="text-light display-1"  > BEACH WATCH  </h1>      
+             <h1 className="text-light display-1 text-center"  > BEACH WATCH  </h1>      
             </div>
           </div>
           <div className="each-slide">
             <div className="d-flex align-items-center justify-content-center" style={{'backgroundImage': `url(${slideImages[1]})` , 'height': `100vh` , 'backgroundSize': `cover`,
   'backgroundBlendMode': `darken`, 'backgroundColor': `rgba(23, 8, 228, 0.856)`, 'backgroundAttachment': `fixed`}}>
                 
-                <h1 className="text-light display-1"  > Nurture Amidst Nature </h1>
+                <h1 className="text-light display-1 text-center"  > Nurture Amidst Nature </h1>
 
             </div>
           </div>
@@ -36,7 +36,7 @@ const Cerosal = ()=>{
             <div className="d-flex align-items-center justify-content-center" style={{'backgroundImage': `url(${slideImages[2]})`, 'height': `100vh`, 'backgroundSize': `cover`,
   'backgroundBlendMode': `darken`, 'backgroundColor': `rgba(23, 8, 228, 0.856)`, 'backgroundAttachment': `fixed`}}>
                
-               <h1 className="text-light display-1"  > Wekcome to Andaman and Nicobar Islands </h1>
+               <h1 className="text-light display-1 text-center"  > Welcome to Andaman&Nicobar Islands </h1>
 
             </div>
           </div>

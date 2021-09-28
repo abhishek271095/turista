@@ -2,13 +2,14 @@ import React from 'react';
 import './Navbar.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import { NavDropdown, FormControl, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import { useState, useEffect } from "react"
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col' 
+import { Image } from 'react-bootstrap';
 
 
 
@@ -46,41 +47,33 @@ const Navigation = ()=>{
     return(
         <div>
             <Navbar collapseOnSelect expand="lg" className={navbar ? "navbar active" : "navbar"} fixed="top" >
-                <Container>
-               
-                     <Navbar.Brand href="#home">
+                <Container >
 
-                     <img
-                            className="d-block w-25 "
-                            src="Banner/logo2.png"
-                            alt="First slide"
-                        /> 
-                     </Navbar.Brand>
+                  
+                      
+                        <Navbar.Brand href="#home">
+                                   {/* Turista */}
+                          <Image src="Banner/logo2.png" fluid style={{'height': `100px`}}/>
+                        </Navbar.Brand>  
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav"  className="bg-light" />
+                      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end ">
 
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"  className="bg-light" />
-               
-                     <Navbar.Collapse id="responsive-navbar-nav">
+                         <Nav className="">
+                          <Nav.Link href="#features" className="text-light">Home</Nav.Link>
+                          <Nav.Link href="#pricing" className="text-light">About</Nav.Link>
+                          <Nav.Link href="#features" className="text-light">Serives</Nav.Link>
+                          <Nav.Link href="#pricing" className="text-light">Contact</Nav.Link>
+                          <Nav.Link onClick={handleShow} className="text-light" >Sign In</Nav.Link>
+                          <Nav.Link eventKey={2} onClick={signUp} className="text-light"> Sign Up</Nav.Link>
 
-                        <Nav className="me-auto ">
-
-                            <Nav.Link href="#features" className="text-light">Home</Nav.Link>
-                            <Nav.Link href="#pricing" className="text-light">About</Nav.Link>
-                            <Nav.Link href="#features" className="text-light">Serives</Nav.Link>
-                            <Nav.Link href="#pricing" className="text-light">Contact</Nav.Link>
-                            
+                   
                         </Nav>
-
-                         <Nav>
-                            <Nav.Link onClick={handleShow} className="text-light" >Sign In</Nav.Link>
-                            <Nav.Link eventKey={2} onClick={signUp} className="text-light"> Sign Up</Nav.Link>
-
-                         
-                         </Nav>
-                    </Navbar.Collapse>
+                      </Navbar.Collapse>
                 </Container>
             </Navbar>
-
             
+
+
 
             <Modal show={show} onHide={handleClose}>
                                 <Modal.Header closeButton>
