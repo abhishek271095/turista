@@ -1,0 +1,39 @@
+.footer {
+  background: #262626;
+  display: flex;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.icon li {
+  text-align: center;
+}
+
+/* .icon:hover:before {
+  top: 0;
+}
+
+.iconList li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.iconList li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.iconList li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.iconList li:nth-child(4) a:before {
+  background: #dd4b39;
+} */
