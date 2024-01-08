@@ -22,6 +22,10 @@ const Highlight = () => {
               from Kolkata, Chennai and Vishakhapatnam. Air India, Jet Airways,
               Go Air and Spice Jet airlines offer their services here.
             </p>
+            <span className="top"></span>
+            <span className="right"></span>
+            <span className="bottom"></span>
+            <span className="left"></span>
           </Col>
           <Col className="mb-5 m-2 text-center high_bx">
             <i
@@ -34,6 +38,10 @@ const Highlight = () => {
               It is filled with white sandy beaches, fun-filled activities,
               wildlife reserves and scrumptious local cuisines.
             </p>
+            <span className="top"></span>
+            <span className="right"></span>
+            <span className="bottom"></span>
+            <span className="left"></span>
           </Col>
         </Row>
       </Container>

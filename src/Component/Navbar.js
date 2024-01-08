@@ -51,7 +51,7 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand href="#home">
             {/* Turista */}
-            <Image src="Banner/logo2.png" fluid style={{ height: `100px` }} />
+            <Image src="Banner/logo2.png" fluid style={{ height: `50px` }} />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"

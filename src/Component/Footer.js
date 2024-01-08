@@ -6,25 +6,9 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <Container className="bg-warning footer" fluid>
-        <ul className="iconList d-flex">
-          <li className="d-inline-flex">
-            <i className="fab fa-facebook-f text-light icon"></i>
-          </li>
-          <li className="d-inline-flex">
-            <i className="fab fa-twitter icon"></i>
-          </li>
-          <li className="iconList d-flex">
-            <i className="fab fa-linkedin-in icon"></i>
-          </li>
-          <li className="iconList d-flex">
-            <i className="fab fa-google-plus-g icon"></i>
-          </li>
-        </ul>
-      </Container>
-      <Container className="bg-dark text-light">
-        <Col className="">
-          <Row className="mt-4">
+      <Container className="bg-dark d-flex footer" fluid>
+        <Container className="bg-dark text-light">
+          <Row className="mt-5">
             <Col xs={12} md={3}>
               <h4> Who we are </h4>
               <ul className="list-unstyled pt-2 ">
@@ -165,12 +149,33 @@ const Footer = () => {
               </Col>
             </Col>
           </Row>
-        </Col>
 
-        <Container className="bg-dark p-3">
-          <p className="lead text-center">
-            copyright @ 2021. By:- Abhishek Yadav
-          </p>
+          <Row className="mt-3">
+            <Col xs={12} md={6}>
+              <p className="lead pt-2">copyright @ 2023. By:- Abhishek Yadav</p>
+            </Col>
+            <Col xs={12} md={6} className="d-flex justify-content-end">
+              <span>
+                <ul className="list-inline iconList d-flex p-2">
+                  <li className="p-2">
+                    <p> Connect Us:-</p>
+                  </li>
+                  <li className="p-2">
+                    <i className="fab fa-facebook-f icon"></i>
+                  </li>
+                  <li className="p-2">
+                    <i className="fab fa-twitter icon"></i>
+                  </li>
+                  <li className="p-2">
+                    <i className="fab fa-linkedin-in icon"></i>
+                  </li>
+                  <li className="p-2">
+                    <i className="fab fa-google-plus-g icon"></i>
+                  </li>
+                </ul>
+              </span>
+            </Col>
+          </Row>
         </Container>
       </Container>
     </div>
